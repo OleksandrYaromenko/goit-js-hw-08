@@ -87,11 +87,12 @@ function imgBoxClick(event) {
     event.preventDefault()
     const currentImages = event.target.closest(".gallery-item")
     const imagesData = currentImages.dataset.source;
-    const imgFind = images.find(item => item.source === imagesData)
+    const imgFind = images.find(item => item.original === imagesData)
     const instance = basicLightbox.create(`
 	<div class="modal">
     <img src ="${imgFind.original}" alt="${imgFind.description}">`)
     instance.show()
+    console.log(imgFind)
 }
  
 
