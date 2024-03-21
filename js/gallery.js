@@ -89,7 +89,8 @@ function imgBoxClick(event) {
     const imgFind = images.find(item => item.original === event.target.dataset.source);
     const instance = basicLightbox.create(`
 	<div class="modal">
-    <img src ="${imgFind.original}" alt="${imgFind.description}" class = "img-modal" >`)
+    <img src ="${imgFind.original}" alt="${imgFind.description}" class = "img-modal"
+ >`)
     instance.show()
     console.log(imgFind)
 }
