@@ -37,6 +37,6 @@ body {
   margin-bottom: 28px;
 }
 .gallery-image:hover {
-  width: 376px;
-  height: 208px;
+  transform: scale(1.1);
+  transition-duration: 500ms;
 }
